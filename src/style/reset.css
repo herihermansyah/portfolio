@@ -1,0 +1,12 @@
+@layer components {
+  * {
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+  }
+  html {
+    font-family: "poppins", sans-serif;
+  }
+  body {
+    @apply bg-background;
+  }
+}
