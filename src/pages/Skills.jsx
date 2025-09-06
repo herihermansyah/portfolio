@@ -4,7 +4,7 @@ import CartsSkill from "../features /skills/Proficiency/CartsSkills";
 
 const Skills = () => {
   return (
-    <div id="skills" className=" px-4 md:px-0 bg-background-2 py-15">
+    <div id="skills" className=" px-4 md:px-0 bg-background-2 py-6">
       <h2 className="text-center text-[1.25rem] md:text-[1.5rem] xl:text-[2rem] font-bold mb-20">
         Skills
       </h2>

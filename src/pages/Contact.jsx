@@ -4,7 +4,7 @@ import Location from "../features /contact/Location";
 
 const Contact = () => {
   return (
-    <div id="contact">
+    <div id="contact" className="bg-background-2 py-6">
       <h2 className="text-center text-[1.25rem] md:text-[1.5rem] xl:text-[2rem] font-bold mb-20">
         Contact
       </h2>
