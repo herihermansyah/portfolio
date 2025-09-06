@@ -18,6 +18,13 @@ const CardProject = () => {
       codeUrl: "https://github.com/herihermansyah/multi-page",
       status: "Desktop Only",
     },
+    {
+      id: 3,
+      title: "Ecommerce redux toolkit",
+      projectUrl: "https://redux-toolkit-ecommerce-brown.vercel.app/",
+      codeUrl: "https://github.com/herihermansyah/redux-toolkit-ecommerce",
+      status: "Smartphone Only",
+    },
   ];
 
   const [open, setOpen] = useState(false);
@@ -135,7 +142,12 @@ const CardProject = () => {
             </>
           )}
           {selectedProject && (
-            <Typography sx={{fontSize:"18px", fontWeight:"bold"}} variant="body2">{selectedProject.status}</Typography>
+            <Typography
+              sx={{ fontSize: "18px", fontWeight: "bold" }}
+              variant="body2"
+            >
+              {selectedProject.status}
+            </Typography>
           )}
         </Box>
       </Modal>
