@@ -9,7 +9,7 @@ const HeroImage = () => {
           src={me}
           alt="my photo"
           loading="lazy"
-          className="w-[75%] h-full object-cover md:w-[60%] xl:w-[75%]"
+          className="w-[75%] h-full object-cover md:w-[60%] xl:w-[95%] rounded-full border-2 border-hover"
         />
       </section>
     </div>
