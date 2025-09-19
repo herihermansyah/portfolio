@@ -2,7 +2,7 @@ export const projectsData = [
   {
     id: 1,
     title: "Portfolio",
-    projectUrl: "https://heri-hermansyah.vercel.app/",
+    projectUrl: "https://herihermansyah.vercel.app/",
     codeUrl: "https://github.com/herihermansyah/portfolio",
     status: "Responsive Design",
   },
