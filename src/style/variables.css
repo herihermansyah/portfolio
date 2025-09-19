@@ -1,0 +1,13 @@
+@theme {
+  /* color dark */
+  --color-backgroundDark: #292929;
+  --color-headerDark: #686d76;
+  --color-footerDark: #40424a;
+  --color-optionDark: #dc5f00;
+
+  /* color ligth */
+  --color-backgroundLigth: #f3f2ec;
+  --color-headerLight: #e62727;
+  --color-footerLight: #1e93ab;
+  --color-optionLight: #ffe500;
+}
