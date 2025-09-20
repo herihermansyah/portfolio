@@ -15,7 +15,7 @@ function GroupCard({skillsData}) {
           >
             {group.items.map((skill) => {
               const Icon = skill.icon;
-              return <Icon key={skill.id} size={42} />;
+              return <Icon className="text-white" key={skill.id} size={42} />;
             })}
           </div>
         </div>
