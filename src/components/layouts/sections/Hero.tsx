@@ -42,7 +42,7 @@ function Hero() {
 
       <div
         className="flex flex-col
-                        md:flex-row gap-10 md:gap-4 lg:gap-15 lg:flex-col lg:flex-1 xl:flex-3"
+                        md:flex-row gap-10 md:gap-4 lg:gap-4 xl:gap-15 lg:flex-col lg:flex-1 xl:flex-3"
       >
         {/* hero text */}
         <motion.div
@@ -60,7 +60,7 @@ function Hero() {
             subTitleClass="capitalize text-xl font-bold "
           />
           <hr />
-          <Description>{heroText}</Description>
+          <Description >{heroText}</Description>
           <DownloadFile
             file="/resume.pdf"
             name="download cv"
@@ -72,7 +72,7 @@ function Hero() {
           initial={{x: "100vw"}}
           animate={{x: 0}}
           transition={{duration: 0.3, delay: 0.4}}
-          className="flex flex-col gap-15"
+          className="flex flex-col gap-15 md:gap-4"
         >
           <div className="flex flex-col gap-2">
             <SectionTitle
@@ -80,7 +80,7 @@ function Hero() {
               textClass="mb-0 uppercase font-bold"
             />
             <ContactsList
-              boxClass="flex gap-2"
+              boxClass="grid grid-cols-1 md:flex gap-2"
               data={contacts.filter((item) => [1, 3, 5].includes(item.id))}
             />
           </div>
@@ -98,7 +98,8 @@ function Hero() {
               showCategory
               iconClass="text-white text-4xl md:text-2xl lg:text-4xl"
               titleClass="text-white md:text-[10px] lg:text-[16px] uppercase whitespace-nowrap"
-              boxClass="flex gap-4 items-center"
+              boxClass="flex flex-col md:flex-row items-start gap-4"
+              boxClass2="flex flex-col items-center"
               boxClass3="flex gap-8 p-4 shadow-xl/30 rounded-xl"
               boxClass4="flex flex-col gap-2 items-center"
             />
