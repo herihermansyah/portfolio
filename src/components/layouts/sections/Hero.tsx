@@ -24,7 +24,7 @@ function Hero() {
     >
       {/* image */}
       <motion.div
-        initial={{x: -1000}}
+        initial={{x: -700}}
         animate={{x: 0}}
         transition={{duration: 0.4}}
         className="flex justify-center lg:justify-start lg:flex-2"
@@ -46,7 +46,7 @@ function Hero() {
       >
         {/* hero text */}
         <motion.div
-          initial={{x: 1000}}
+          initial={{x: 700}}
           animate={{x: 0}}
           transition={{duration: 0.4}}
           className={`flex flex-col gap-4 p-4 rounded-xl shadow-xl/30 ${
@@ -69,7 +69,7 @@ function Hero() {
         </motion.div>
         {/* contact and skills */}
         <motion.div
-          initial={{x: 1000}}
+          initial={{x: 700}}
           animate={{x: 0}}
           transition={{duration: 0.4, delay: 0.2}}
           className="flex flex-col gap-15"
@@ -85,7 +85,7 @@ function Hero() {
             />
           </div>
           <div className="flex flex-col gap-2 ">
-            <SectionTitle title="skills" textClass="mb-0 uppercase font-bold"/>
+            <SectionTitle title="skills" textClass="mb-0 uppercase font-bold" />
             <SkillsCard
               skills={skillsData.filter((item) =>
                 ["Frontend Library", "Styling"].includes(item.category)
