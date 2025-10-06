@@ -24,9 +24,9 @@ function Hero() {
     >
       {/* image */}
       <motion.div
-        initial={{x: -100}}
+        initial={{x: "-100vw"}}
         animate={{x: 0}}
-        transition={{duration: 0.2}}
+        transition={{duration: 0.5}}
         className="flex justify-center lg:justify-start lg:flex-2"
       >
         <Image
@@ -46,9 +46,9 @@ function Hero() {
       >
         {/* hero text */}
         <motion.div
-          initial={{x: 100}}
+          initial={{x: "100vw"}}
           animate={{x: 0}}
-          transition={{duration: 0.2}}
+          transition={{duration: 0.3, delay: 0.2}}
           className={`flex flex-col gap-4 p-4 rounded-xl shadow-xl/30 ${
             theme === "light" ? "bg-optionLight" : "bg-optionDark"
           }`}
@@ -69,9 +69,9 @@ function Hero() {
         </motion.div>
         {/* contact and skills */}
         <motion.div
-          initial={{x: 100}}
+          initial={{x: "100vw"}}
           animate={{x: 0}}
-          transition={{duration: 0.2, delay: 0.2}}
+          transition={{duration: 0.3, delay: 0.4}}
           className="flex flex-col gap-15"
         >
           <div className="flex flex-col gap-2">
