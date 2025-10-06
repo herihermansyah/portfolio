@@ -32,8 +32,8 @@ function Hero() {
         <Image
           src="/avatarweb.webp"
           alt="foto heri hermansyah"
-          width={1800}
-          height={2640}
+          width={600}
+          height={800}
           className="rounded-4xl w-[90%] sm:w-[70%] md:w-[60%] lg:w-[80%] xl:max-w-[90%] shadow-xl/30"
         />
       </motion.div>
