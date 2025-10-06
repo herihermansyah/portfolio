@@ -1,15 +1,12 @@
-import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
-import "./globals.css";
+import type {Metadata} from "next";
+import {Poppins} from "next/font/google";
+import "../style/globals.css";
+import SiteLayout from "./layouts/SiteLayout";
+import {ThemeProvider} from "next-themes";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const fontPoppins = Poppins({
   subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
+  weight: ["400", "500", "600", "700"],
 });
 
 export const metadata: Metadata = {
@@ -23,11 +20,14 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        id="home"
+        className={`${fontPoppins.className} antialiased flex flex-col min-h-screen`}
       >
-        {children}
+        <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
+          <SiteLayout>{children}</SiteLayout>
+        </ThemeProvider>
       </body>
     </html>
   );

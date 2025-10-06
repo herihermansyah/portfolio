@@ -1,0 +1,13 @@
+@theme {
+  /* light mode */
+  --color-headerLight: #ff1f5a;
+  --color-footerLight: #1e2a78;
+  --color-hoverLight: #f9ff21;
+  --color-optionLight: #ffd615;
+
+  /* dark mode */
+  --color-headerDark: #37353e;
+  --color-footerDark: #44444e;
+  --color-hoverDark: #d3dad9;
+  --color-optionDark: #715a5a;
+}
